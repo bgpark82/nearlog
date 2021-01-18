@@ -1,0 +1,5 @@
+rootProject.name = 'nearlog'
+include 'nl-admin'
+include 'nl-api'
+include 'nl-common'
+

@@ -1,0 +1,14 @@
+# common
+spring.output.ansi.enabled: ALWAYS
+spring.devtools.livereload.enabled: true
+spring.devtools.restart.enabled: true
+
+server:
+  port: 8081
+
+# database
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
