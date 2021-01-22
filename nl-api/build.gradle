@@ -1,15 +1,21 @@
-plugins {
-    id 'java'
-}
-
-version 'unspecified'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(":nl-common")
+    compile 'org.hibernate:hibernate-spatial:5.4.1.Final'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'com.h2database:h2'
+    compile("mysql:mysql-connector-java")
+
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.ehcache:ehcache:3.8.0'
+    implementation 'javax.cache:cache-api:1.0.0'
+
+    implementation 'com.google.maps:google-maps-services:0.9.1'
+    compile "com.google.guava:guava:16+"
+
+    compile 'io.springfox:springfox-swagger2:2.9.2'
+    compile 'io.springfox:springfox-swagger-ui:2.9.2'
+
+
+
 }
